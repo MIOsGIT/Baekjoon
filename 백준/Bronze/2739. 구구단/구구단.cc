@@ -1,15 +1,16 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+#pragma warning(disable : 4996)
+#include<stdio.h>
 
-int main(void)
-{
-    int n;
-    scanf("%d", &n);
-        int q = 0;
+int main() {
 
-    for (int i = 0; i < 9; i++) {
-        q+=1;
-        printf("%d * %d = %d\n", n, q, n * q);
-    }
-    return 0;
+	int n;
+	
+	scanf ("%d", &n);
+
+	for (int i = 1; i < 10; i++) {
+		
+		printf("%d * %d = %d\n", n, i, n*i);
+
+	}
+	return 0;
 }
