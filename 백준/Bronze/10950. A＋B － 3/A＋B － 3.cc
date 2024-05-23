@@ -1,14 +1,17 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+#pragma warning(disable : 4996)
+#include<stdio.h>
 
-int main(void)
-{
-    int T, a, b;
-    scanf("%d", &T);
-    
-    for (int i = 0; i < T; i++) {
-        scanf("%d %d", &a, &b);
-        printf("%d\n", a + b);
-    }
-    return 0;
+int main() {
+
+	int a, b, t;
+	 
+
+	scanf("%d", &t);
+
+	while (t--)
+	{
+		scanf("%d %d", &a, &b);
+		printf("%d\n", a+b); 
+	}
+	return 0;
 }
