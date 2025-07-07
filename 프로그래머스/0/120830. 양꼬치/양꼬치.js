@@ -1,6 +1,8 @@
 function solution(n, k) {
+    let yang = 12000;
+    let fanta = 2000;
     var answer = 0;
-    answer = n*12000+k*2000;
-    if(n/10>=1) answer-=Math.floor(n/10)*2000;
+    let ser = (Math.floor(n/10))*fanta;
+    answer = n*yang + k* fanta - ser;
     return answer;
 }
